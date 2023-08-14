@@ -185,6 +185,11 @@ h3 {
     
 }
 
+/* .learn-more-container {
+    position: absolute;
+    z-index: 10;
+} */
+
 .info {
     display: flex;
     align-items: center;
@@ -211,6 +216,7 @@ h3 {
         /* margin-top: 20rem; */
         /* Align content to the start (top) */
         margin-right: 2rem;
+        z-index: 10;
     }
 
 
@@ -238,7 +244,7 @@ h3 {
     }
 
     .dropdown-container {
-        text-align: left;
+        /* text-align: left; */
     }
 
     .dropdown-container img {
