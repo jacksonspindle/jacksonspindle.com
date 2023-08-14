@@ -38,7 +38,11 @@ const Projects = () => {
               shipped to their door.
             </p>
             <button className="learn-more-button">
-              <a target="_blank" href="https://geniex.io/">
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://geniex.io/"
+              >
                 Learn More{" "}
               </a>
             </button>
@@ -66,7 +70,11 @@ const Projects = () => {
               different blog posts pertaining to that location.
             </p>
             <button className="learn-more-button">
-              <a target="_blank" href="https://energyadventurer.com/">
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://energyadventurer.com/"
+              >
                 Learn More{" "}
               </a>
             </button>
@@ -94,7 +102,11 @@ const Projects = () => {
               different blog posts pertaining to that location.
             </p>
             <button className="learn-more-button">
-              <a target="_blank" href="https://hedgey.finance/">
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://hedgey.finance/"
+              >
                 Learn More{" "}
               </a>
             </button>
