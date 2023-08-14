@@ -1,0 +1,297 @@
+.home-container {
+    border: 1px solid gray;
+    width: 90vw;
+    height: 90vh;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+.nav-container {
+    position: sticky;
+    top: 0;
+    width: 500px;
+}
+
+.projects-container {
+    margin-right: 3rem;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 8rem;
+    justify-content: right;
+    max-width: 715px;
+}
+
+.project-container {
+    display: flex;
+    align-items: end;
+    gap: 1rem;
+    transition: .2s ease-in-out all;
+    cursor: pointer;
+    justify-content: right;
+}
+
+.project-container:hover {
+    opacity: .7;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    font-family: neue-montreal-thin;
+}
+
+h1 {
+    font-family: neue-montreal-thin;
+    font-size: 60px;
+    margin: 1rem 3rem 0rem 3rem;
+    font-weight: 100;
+    color: #FFFFFF;
+}
+
+h2 {
+    font-family: neue-montreal-thin;
+    font-size: 60px;
+    margin: 0;
+}
+
+h3 {
+    font-family: neue-montreal-thin;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 0rem 3rem 1rem 3rem;
+    opacity: .7;
+}
+
+@font-face {
+    font-family: neue-montreal-thin;
+    src: url(../../public/PPNeueMontreal-Thin.otf);
+}
+
+.project-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.dropdown-container {
+    overflow: auto;
+    max-width: 500px;
+}
+
+@media screen and (max-width: 1400px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    .projects-container {
+         max-width: 200px;
+    }
+
+    .dropdown-container {
+        overflow: auto;
+        /* width: 100vw; */
+    }
+}
+
+@media screen and (max-width: 454px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    .projects-container {
+         max-width: 100px;
+    }
+
+    .dropdown-container {
+        overflow: auto;
+        /* width: 100vw; */
+    }
+}
+
+.linkIcon {
+    filter: invert(1);
+    transition: .2s all ease-in-out;
+}
+
+.linkIcon:hover {
+    transform: scale(1.15);
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    margin-right: 7rem;
+    margin-top: 3rem;
+}
+
+.info-container li {
+    max-width: 200px;
+}
+
+.info-container h3 {
+    margin: 0;
+}
+
+.info-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-content h3 {
+    font-size: 18px;
+}
+
+.info-content p {
+    max-width: 700px;
+    
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info> :nth-child(2) {
+    max-width: 400px;
+    /* Changed to max-width */
+    flex-shrink: 0;
+}
+
+.info ul {
+    list-style-type: disc;
+    padding-left: 1em;
+    font-size: 15px;
+    font-style: italic;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 900px) {
+    .info-container {
+        align-items: flex-end;
+        /* margin-top: 20rem; */
+        /* Align content to the start (top) */
+        margin-right: 2rem;
+    }
+
+
+    .info-content p,
+    .info-container li {
+        max-width: 100%;
+    }
+
+    .info> :nth-child(2) {
+        max-width: 100%;
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 2rem;
+    }
+
+    .info ul {
+        /* margin: 0; */
+        padding: 0;
+    }
+    .info-ul {
+        margin: 0;
+    }
+
+    .dropdown-container {
+        text-align: left;
+    }
+
+    .dropdown-container img {
+        width: 100%;
+        
+    }
+}
+
+
+
+@media (max-width: 464px) {
+    .info-container {
+        align-items: flex-end;
+        margin-top: 33rem;
+        /* Align content to the start (top) */
+        margin-right: 2rem;
+    }
+
+
+}
+
+
+@media (max-width: 800px) {
+    .info-container {
+        align-items: flex-end;
+        margin-top: 33rem;
+        /* Align content to the start (top) */
+        margin-right: 2rem;
+    }
+
+    .dropdown-container {
+    }
+    
+
+        .projects-container {
+            margin-right: 2rem;
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-top: 8rem;
+            justify-content: right;
+        }
+
+        .description-container {
+            width: 250px;
+            flex-direction: column;
+        }
+
+                .nav-container {
+                    position: relative;
+                    top: 0;
+                    width: 500px;
+                    left: -1rem;
+                }
+}
