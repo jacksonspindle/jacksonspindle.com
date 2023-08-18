@@ -49,7 +49,7 @@ const Info = () => {
             >
               <motion.img
                 style={{ width: "30px" }}
-                className="cvIcon"
+                className="mailIcon"
                 src={mailIcon}
               ></motion.img>
             </a>

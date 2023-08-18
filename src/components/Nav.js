@@ -8,7 +8,7 @@ const navItemVariants = {
 };
 
 const Nav = () => {
-  const navItems = ["projects", "info", "contact"];
+  const navItems = ["projects", "info"];
 
   return (
     <div>
