@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import genieXThumbnail from "../images/genieXThumbnail.png";
 import energyAdventurerThumbnail from "../images/energyAdventurerThumbnail.png";
+import hedgeyThumbnail from "../images/hedgeyThumbnail.png";
+import genieAppThumbnail from "../images/genieAppThumbnail.png";
 import linkIcon from "../images/linkIcon.png";
 
 const projectVariants = {
@@ -27,7 +29,7 @@ const Projects = () => {
       year: "2023",
       type: "Personal Business",
       link: "https://geniex.io/",
-      title: "GenieX Landing Page",
+      title: "GenieX Landing",
       description: (
         <div className="description-container">
           <div>
@@ -51,6 +53,38 @@ const Projects = () => {
             className="thumbnail-image"
             alt="genieX thumnail"
             src={genieXThumbnail}
+          ></img>
+        </div>
+      ),
+    },
+    {
+      year: "2023",
+      type: "Personal Business",
+      link: "https://stirring-dusk-267740.netlify.app/",
+      title: "GenieX Prototype",
+      description: (
+        <div className="description-container">
+          <div>
+            <p>
+              A work-in-progress prototype of the GenieX App. The app allows
+              users to design graphics for 3D fashion garments using AI tools
+              like the DALLE API. The designs can then be ordered as physical
+              products.
+            </p>
+            <button className="learn-more-button">
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://stirring-dusk-267740.netlify.app/"
+              >
+                Learn More{" "}
+              </a>
+            </button>
+          </div>
+          <img
+            className="thumbnail-image"
+            alt="genieX thumnail"
+            src={genieAppThumbnail}
           ></img>
         </div>
       ),
@@ -96,10 +130,8 @@ const Projects = () => {
         <div className="description-container">
           <div>
             <p>
-              Energy Adventurer is an interactive map-based blog covering
-              various topics surrounding the climate changes faced by India.
-              Users are able to explore the map and click on pins to read
-              different blog posts pertaining to that location.
+              Created 3D animations and designed/launched the landing page for
+              Hedgey Finance, a blockchain finance company.
             </p>
             <button className="learn-more-button">
               <a
@@ -114,7 +146,7 @@ const Projects = () => {
           <img
             className="thumbnail-image"
             alt="energyAdventurer thumnail"
-            src={energyAdventurerThumbnail}
+            src={hedgeyThumbnail}
           ></img>
         </div>
       ),
@@ -174,6 +206,12 @@ const Projects = () => {
           </AnimatePresence>
         </div>
       ))}
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
     </motion.div>
   );
 };

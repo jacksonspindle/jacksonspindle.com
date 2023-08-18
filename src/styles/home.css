@@ -1,5 +1,5 @@
 .home-container {
-    border: 1px solid gray;
+    border: .5px solid gray;
     width: 90vw;
     height: 90vh;
     margin-top: 1.5rem;
@@ -36,6 +36,21 @@
 
 .project-container:hover {
     opacity: .7;
+}
+
+.linkedinIcon{
+    width: 35px;
+    position: absolute;
+    left: 6%;
+    bottom: 8%;
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+}
+
+
+
+.linkedinIcon:hover {
+    transform: scale(1.15);
 }
 
 a {
@@ -148,10 +163,66 @@ h3 {
 .linkIcon {
     filter: invert(1);
     transition: .2s all ease-in-out;
+    
 }
 
 .linkIcon:hover {
     transform: scale(1.15);
+    cursor: pointer;
+}
+
+.cvIcon {
+    filter: invert(1);
+    width: 25px;
+    opacity: .7;
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+}
+
+.cvIcon:hover {
+    transform: scale(1.15);
+    opacity: 1;
+}
+
+.contact-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cv-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.mail-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    
+}
+
+.mailIcon {
+    transition: .2s all ease-in-out;
+    transform: scale(1.15);
+        opacity: 1;
+}
+
+.mailIcon:hover {
+    filter: invert(1);
+}
+
+.linkedInIcon2 {
+    width: 35px;
+    opacity: .7;
+    transition: .2s all ease-in-out;
+}
+
+.linkedInIcon2:hover {
+    transform: scale(1.15);
+    opacity: 1;
 }
 
 .info-container {

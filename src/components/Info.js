@@ -1,5 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
+import cvIcon from "../images/cvIcon.png";
+import linkedinIcon from "../images/linkedinIcon.png";
+import mailIcon from "../images/mailIcon.png";
 
 const Info = () => {
   const fadeInVariants = {
@@ -26,6 +29,43 @@ const Info = () => {
           development, I am passionate about creating innovative digital
           experiences that fuse art with technology.
         </motion.p>
+
+        <motion.div className="contact-container">
+          <motion.div className="cv-container">
+            <h3>CV</h3>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://sprinkle-town-d52.notion.site/Resume-27913e27a3544d868692469ec84ff2f8"
+            >
+              <motion.img className="cvIcon" src={cvIcon}></motion.img>
+            </a>
+          </motion.div>
+          <motion.div className="mail-container">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://sprinkle-town-d52.notion.site/Resume-27913e27a3544d868692469ec84ff2f8"
+            >
+              <motion.img
+                style={{ width: "30px" }}
+                className="cvIcon"
+                src={mailIcon}
+              ></motion.img>
+            </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://sprinkle-town-d52.notion.site/Resume-27913e27a3544d868692469ec84ff2f8"
+            >
+              <motion.img
+                className="linkedInIcon2"
+                src={linkedinIcon}
+              ></motion.img>
+            </a>
+          </motion.div>
+        </motion.div>
+
         <motion.div
           className="info"
           variants={fadeInVariants}

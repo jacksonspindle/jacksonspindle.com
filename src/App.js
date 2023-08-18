@@ -6,6 +6,8 @@ import { Routes, Route } from "react-router-dom";
 import Info from "./components/Info";
 import { motion } from "framer-motion";
 import Nav from "./components/Nav";
+import ContactForm from "./components/ContactForm";
+import linkedinIcon from "../src/images/linkedinIcon.png";
 
 function App() {
   return (
@@ -35,10 +37,23 @@ function App() {
           <Nav />
         </div>
 
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.linkedin.com/in/jackson-spindle-13a932219/"
+        >
+          <img
+            className="linkedinIcon"
+            src={linkedinIcon}
+            alt="linkedinIcon"
+          ></img>
+        </a>
+
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/projects" element={<Home />}></Route>
           <Route path="/info" element={<Info />}></Route>
+          <Route path="/contact" element={<ContactForm />}></Route>
         </Routes>
       </motion.div>
     </div>
