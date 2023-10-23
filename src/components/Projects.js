@@ -4,6 +4,7 @@ import genieXThumbnail from "../images/genieXThumbnail.png";
 import energyAdventurerThumbnail from "../images/energyAdventurerThumbnail.png";
 import hedgeyThumbnail from "../images/hedgeyThumbnail.png";
 import genieAppThumbnail from "../images/genieAppThumbnail.png";
+import GPTravelThumbnail from "../images/GPTravelThumbnail.png";
 import linkIcon from "../images/linkIcon.png";
 
 const projectVariants = {
@@ -75,7 +76,7 @@ const Projects = () => {
               <a
                 rel="noopener noreferrer"
                 target="_blank"
-                href="https://stirring-dusk-267740.netlify.app/"
+                href="https://stirring-dusk-267740.netlify.app/design"
               >
                 Learn More{" "}
               </a>
@@ -147,6 +148,37 @@ const Projects = () => {
             className="thumbnail-image"
             alt="energyAdventurer thumnail"
             src={hedgeyThumbnail}
+          ></img>
+        </div>
+      ),
+    },
+    {
+      year: "2023",
+      type: "Personal Project",
+      link: "https://shiny-crisp-14dc44.netlify.app/",
+      title: "GPTravel",
+      description: (
+        <div className="description-container">
+          <div>
+            <p>
+              Travel App with 3D globe to visually learn about diffrent
+              countries. Includes a AI chat feature for asking questions about
+              countries.
+            </p>
+            <button className="learn-more-button">
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://shiny-crisp-14dc44.netlify.app/"
+              >
+                Learn More{" "}
+              </a>
+            </button>
+          </div>
+          <img
+            className="thumbnail-image"
+            alt="gptravel thumnail"
+            src={GPTravelThumbnail}
           ></img>
         </div>
       ),
